@@ -1,88 +1,48 @@
-# Task Tracker Application
+# Task Tracker
 
-A simple desktop-based task management application built using Python, Tkinter, and SQLite. This application allows users to organize and manage their daily tasks in an efficient and user-friendly way.
-
----
-
-## 👥 Team Members
-
-- **Briana Randolph** — GUI Design and Tkinter Interface  
-- **Gonzalo Leon Carlos** — Backend Development and Database Integration  
+This is a simple task tracker application built using Python, Tkinter, and SQLite. The goal of this project is to create an easy way for users to keep track of their daily tasks without using complicated apps.
 
 ---
 
-## 🎯 Project Overview
+## Team Members
 
-The Task Tracker Application is designed to help users manage daily responsibilities such as school assignments, work tasks, and personal goals.
-
-Many existing task management tools are complex and difficult to use. This project focuses on providing a simple, lightweight, and easy-to-use solution.
-
-Users can:
-- Add new tasks
-- View all tasks
-- Mark tasks as completed
-- Delete tasks
-
-All data is stored in a database, allowing tasks to persist even after closing the application.
+- Briana Randolph — worked on the GUI using Tkinter  
+- Gonzalo Leon Carlos — worked on the backend and database  
 
 ---
 
-## ⚙️ Features
+## What the app does
+
+The application lets users:
 
 - Add new tasks  
-- View all existing tasks  
+- See all their tasks  
 - Mark tasks as completed  
 - Delete tasks  
-- Persistent storage using SQLite  
+
+All the tasks are saved in a database, so they stay even after closing the app.
 
 ---
 
-## 🛠️ Technologies Used
+## How it works
 
-- Python  
-- Tkinter (GUI)  
-- SQLite (Database)  
-- Git & GitHub  
+The backend uses SQLite to store the tasks. Each task has:
+- an ID
+- a name
+- a status (Pending or Completed)
 
----
-
-## 🗄️ Database Structure
-
-The application uses SQLite with a table named `tasks`:
-
-| Column Name | Type    | Description                  |
-|------------|--------|------------------------------|
-| id         | INTEGER | Unique task ID (Primary Key) |
-| task_name  | TEXT    | Name of the task             |
-| status     | TEXT    | Task status (Pending/Completed) |
+The program uses basic CRUD operations:
+- Create → add a task  
+- Read → show tasks  
+- Update → mark as completed  
+- Delete → remove a task  
 
 ---
 
-## 🔄 CRUD Operations
+## How to run
 
-- **Create** → Add new tasks  
-- **Read** → Display all tasks  
-- **Update** → Mark tasks as completed  
-- **Delete** → Remove tasks  
-
----
-
-## 🧠 My Contribution (Gonzalo)
-
-My role focused on backend development and database integration.
-
-I:
-- Designed and created the SQLite database
-- Implemented CRUD operations in Python
-- Developed functions to handle task storage, retrieval, updates, and deletion
-- Tested the backend to ensure all functionality works correctly
-
----
-
-## ▶️ How to Run the Project
-
-1. Open the project folder in VS Code or terminal  
-2. Run the backend setup:
+1. Open the project folder  
+2. Run:
 
 ```bash
 python backend.py
